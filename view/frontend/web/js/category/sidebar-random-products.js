@@ -13,7 +13,6 @@ define(['ko', 'jquery', 'uiComponent', 'mage/url'], function (ko, $, Component, 
 
             $.ajax({
                 url: urlBuilder.build("/data/ui/randomproducts"),
-                showLoader: true,
                 success: function (result) {
                    this.products(result);
                 }.bind(this)
